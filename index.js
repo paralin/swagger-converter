@@ -326,7 +326,7 @@ prototype.buildTypeProperties = function(oldType, allowRef) {
     list:        {type: 'array'},
     set:         {type: 'array', uniqueItems: true},
     //JSON Schema Draft-3
-    any:         {},
+    any:         {type: 'object', additionalProperties: {type: 'string'}},
     //Unofficial but very common mistakes
     datetime:    {type: 'string',  format: 'date-time'},
     'date-time': {type: 'string',  format: 'date-time'},
